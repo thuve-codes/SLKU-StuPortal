@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1083109324403",
+    "project_id": "slku-stuportaldb",
+    "storage_bucket": "slku-stuportaldb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1083109324403:android:1db4d79afde17c70579c06",
+        "android_client_info": {
+          "package_name": "com.thuve.slkustuportal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxOj3Orz0TQfby6zc9Rh6Kjc5n7jzQ5WQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
