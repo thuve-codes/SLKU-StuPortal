@@ -19,7 +19,7 @@
         android:layout_height="41dp"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:hint="Enter StudentID No*"
+        android:hint="Enter StudentID"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         />
@@ -30,7 +30,7 @@
         android:layout_width="233dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:hint="Enter Email*"
+        android:hint="Enter Email"
         android:textColor="@color/white"
         android:textColorHint="@color/white" />
     <TextView

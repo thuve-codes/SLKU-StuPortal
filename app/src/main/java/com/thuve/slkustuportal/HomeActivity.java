@@ -1,5 +1,7 @@
 package com.thuve.slkustuportal;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -57,17 +59,26 @@ public class HomeActivity extends AppCompatActivity {
         binding.appBarHome.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null)
-                        .setAnchorView(R.id.fab).show();
+                Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
+                emailIntent.setData(Uri.parse("mailto:info@slku.com")); // Only email apps should handle this
+                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Inquiry from SLKU Portal");
+                emailIntent.putExtra(Intent.EXTRA_TEXT, "Dear SLKU Team,\n\n");
+
+                try {
+                    startActivity(Intent.createChooser(emailIntent, "Send Email"));
+                } catch (android.content.ActivityNotFoundException ex) {
+                    Snackbar.make(view, "No email client installed.", Snackbar.LENGTH_LONG)
+                            .setAnchorView(R.id.fab).show();
+                }
             }
         });
+
 
         // Set up Navigation components
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow)
+                R.id.nav_home, R.id.nav_personalnfo)
                 .setOpenableLayout(drawer)
                 .build();
 

@@ -6,17 +6,198 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
-    <TextView
-        android:id="@+id/text_home"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="32dp"
+            android:background="#F5F5F5">
+
+            <!-- Header Section with Shadow Effect -->
+            <TextView
+                android:id="@+id/homePageTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome to SLKU StuPortal"
+                android:textSize="45sp"
+                android:textColor="#2C3E50"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="30dp"
+                android:textStyle="bold"
+                android:shadowColor="#000000"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"/>
+
+            <!-- Personalized Greetings Section -->
+            <TextView
+                android:id="@+id/welcomeMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome!"
+                android:textSize="22sp"
+                android:textColor="#34495E"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="20dp"/>
+
+            <!-- University Description -->
+            <TextView
+                android:id="@+id/universityDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sri Lanka Knowledge University (SLKU) is dedicated to shaping the future of students through high-quality education, fostering an environment that encourages learning, research, and creativity. SLKU stands at the forefront of educational excellence, preparing students for success in their careers and beyond."
+                android:textSize="18sp"
+                android:textColor="#34495E"
+                android:layout_marginBottom="40dp"
+                android:paddingHorizontal="20dp"
+                android:lineSpacingExtra="8dp"
+                android:gravity="center"/>
+
+            <!-- Quick Access Buttons -->
+            <Button
+                android:id="@+id/btnAssignments"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="Assignments"
+                android:textSize="26sp"
+                android:layout_marginBottom="20dp"
+                android:padding="20dp"
+                android:backgroundTint="#2ECC71"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                />
+
+            <Button
+                android:id="@+id/btnExams"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="@string/exams"
+                android:textSize="26sp"
+                android:layout_marginBottom="20dp"
+                android:padding="20dp"
+                android:backgroundTint="#3498DB"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+               />
+
+            <Button
+                android:id="@+id/btnCourseMaterials"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="Course Materials"
+                android:textSize="26sp"
+                android:layout_marginBottom="20dp"
+                android:padding="20dp"
+                android:backgroundTint="#E67E22"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+               />
+
+            <Button
+                android:id="@+id/btnGrades"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="Grades"
+                android:textSize="26sp"
+                android:layout_marginBottom="20dp"
+                android:padding="20dp"
+                android:backgroundTint="#F39C12"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+            />
+
+            <!-- Academic Progress Tracker -->
+            <TextView
+                android:id="@+id/academicProgress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Academic Progress: 75% Completed"
+                android:textSize="20sp"
+                android:textColor="#34495E"
+                android:layout_marginTop="30dp"
+                android:gravity="center"/>
+
+            <!-- Calendar and Important Dates -->
+            <TextView
+                android:id="@+id/importantDates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Important Dates: Next Exam - Jan 15, 2025"
+                android:textSize="18sp"
+                android:textColor="#34495E"
+                android:layout_marginTop="20dp"
+                android:gravity="center"/>
+
+            <!-- About Us Section -->
+            <TextView
+                android:id="@+id/aboutUsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About Us"
+                android:textSize="26sp"
+                android:textColor="#2C3E50"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/aboutUsDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SLKU is committed to providing students with an enriching educational experience, preparing them for both personal and professional success. With a focus on innovation, leadership, and research, SLKU provides a supportive community for students to excel academically and professionally."
+                android:textSize="18sp"
+                android:textColor="#34495E"
+                android:layout_marginTop="20dp"
+                android:paddingHorizontal="20dp"
+                android:lineSpacingExtra="6dp"/>
+
+            <!-- Feedback Section -->
+            <Button
+                android:id="@+id/btnFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="Give Feedback"
+                android:textSize="26sp"
+                android:layout_marginTop="40dp"
+                android:padding="20dp"
+                android:backgroundTint="#8E44AD"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+             />
+
+            <!-- Footer Section (optional) -->
+            <TextView
+                android:id="@+id/footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SLKU - Empowering Knowledge"
+                android:textSize="16sp"
+                android:textColor="#7F8C8D"
+                android:layout_marginTop="60dp"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/footer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="All Rights Reserved Thuverakan"
+                android:textSize="16sp"
+                android:textColor="#7F8C8D"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/footer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Check codes in Github thuve-codes"
+                android:textSize="16sp"
+                android:textColor="#7F8C8D"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

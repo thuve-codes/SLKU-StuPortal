@@ -9,17 +9,21 @@
         android:id="@+id/nav_home"
         android:name="com.thuve.slkustuportal.ui.home.HomeFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_personalnfo"
+            app:destination="@id/nav_personalnfo" />
+    </fragment>
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.thuve.slkustuportal.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_personalnfo"
+        android:name="com.thuve.slkustuportal.ui.personalInfo.personalInfoFragment"
+        android:label="Personal Info"
+        tools:layout="@layout/fragment_personalnfo" >
+        <action
+            android:id="@+id/nav_personalinfo_to_action_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
 
-    <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.thuve.slkustuportal.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+
 </navigation>

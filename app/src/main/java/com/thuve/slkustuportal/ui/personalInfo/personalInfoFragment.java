@@ -1,4 +1,4 @@
-package com.thuve.slkustuportal.ui.gallery;
+package com.thuve.slkustuportal.ui.personalInfo;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,18 +10,18 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.thuve.slkustuportal.databinding.FragmentGalleryBinding;
+import com.thuve.slkustuportal.databinding.FragmentPersonalnfoBinding;
 
-public class GalleryFragment extends Fragment {
+public class personalInfoFragment extends Fragment {
 
-    private FragmentGalleryBinding binding;
+    private FragmentPersonalnfoBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        GalleryViewModel galleryViewModel =
-                new ViewModelProvider(this).get(GalleryViewModel.class);
+        personalInfoViewModel galleryViewModel =
+                new ViewModelProvider(this).get(personalInfoViewModel.class);
 
-        binding = FragmentGalleryBinding.inflate(inflater, container, false);
+        binding = FragmentPersonalnfoBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textGallery;
