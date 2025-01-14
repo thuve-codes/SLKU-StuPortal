@@ -98,10 +98,10 @@ public class LoginActivity extends AppCompatActivity {
                         String passwordFromDb = userSnapshot.child("password").getValue(String.class);
                         if (passwordFromDb != null && passwordFromDb.equals(password)) {
                             // Correct password, navigate to MainActivity
-                            Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
-                            intent.putExtra("sid", sid);
+                            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                            //intent.putExtra("sid", sid);
                             startActivity(intent);
-                            finish(); // Close LoginActivity
+                            //finish(); // Close LoginActivity
                         } else {
                             errortxt.setText("Wrong Password");
                         }
