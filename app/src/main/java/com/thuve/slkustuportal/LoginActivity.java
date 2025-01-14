@@ -96,9 +96,9 @@ public class LoginActivity extends AppCompatActivity {
                         if (passwordFromDb != null && passwordFromDb.equals(password)) {
                             // Correct password, navigate to MainActivity
                             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                            //intent.putExtra("sid", sid);
+                            intent.putExtra("sid", sid);
                             startActivity(intent);
-                            //finish(); // Close LoginActivity
+                            finish(); // Close LoginActivity
                         } else {
                             errortxt.setText("Wrong Password");
                         }

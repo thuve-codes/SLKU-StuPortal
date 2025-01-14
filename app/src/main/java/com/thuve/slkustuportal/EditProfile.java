@@ -12,6 +12,8 @@ public class EditProfile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_editprofile);
+        String sid = getIntent().getStringExtra("sid");
+
 
     }
 
