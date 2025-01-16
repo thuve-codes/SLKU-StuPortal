@@ -97,6 +97,7 @@ public class LoginActivity extends AppCompatActivity {
                             // Correct password, navigate to MainActivity
                             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                             intent.putExtra("sid", sid);
+                            intent.putExtra("pwd", password);
                             startActivity(intent);
                             finish(); // Close LoginActivity
                         } else {

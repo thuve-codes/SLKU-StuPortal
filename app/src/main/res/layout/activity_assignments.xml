@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Assignments">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="32dp">
+
+            <!-- Header Section -->
+
+            <!-- Description Section -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <!-- Back Button -->
+                <ImageView
+                    android:id="@+id/backButton"
+                    android:layout_width="20dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/backbutton"
+                    android:contentDescription="Back Button"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true" />
+
+                <!-- Page Title -->
+                <TextView
+                    android:id="@+id/assignmentPageTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="42dp"
+                    android:layout_toEndOf="@id/backButton"
+                    android:shadowColor="#000000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="4"
+                    android:text="Assignments"
+                    android:textColor="#2C3E50"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/assignmentDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Manage your assignments efficiently. View due dates, submit files, and check feedback."
+                android:textSize="18sp"
+                android:textColor="#34495E"
+                android:layout_marginBottom="20dp"
+                android:lineSpacingExtra="8dp" />
+
+            <!-- Assignment List Header -->
+            <TextView
+                android:id="@+id/assignmentListHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Assignments"
+                android:textSize="22sp"
+                android:textColor="#2C3E50"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp" />
+
+            <!-- List of Assignments (Example Items) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/assignmentTitle1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Assignment 1: Research Paper"
+                    android:textSize="20sp"
+                    android:textColor="#34495E"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/assignmentDue1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Due Date: Jan 20, 2025"
+                    android:textSize="16sp"
+                    android:textColor="#7F8C8D"
+                    android:layout_marginBottom="8dp" />
+
+                <Button
+                    android:id="@+id/btnSubmit1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Submit Assignment"
+                    android:textSize="18sp"
+                    android:backgroundTint="#2ECC71"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="8dp" />
+
+                <Button
+                    android:id="@+id/btnDetails1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="View Details"
+                    android:textSize="18sp"
+                    android:backgroundTint="#3498DB"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <!-- Example for Another Assignment -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/assignmentTitle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Assignment 2: Group Presentation"
+                    android:textSize="20sp"
+                    android:textColor="#34495E"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/assignmentDue2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Due Date: Jan 25, 2025"
+                    android:textSize="16sp"
+                    android:textColor="#7F8C8D"
+                    android:layout_marginBottom="8dp" />
+
+                <Button
+                    android:id="@+id/btnSubmit2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Submit Assignment"
+                    android:textSize="18sp"
+                    android:backgroundTint="#2ECC71"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="8dp" />
+
+                <Button
+                    android:id="@+id/btnDetails2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="View Details"
+                    android:textSize="18sp"
+                    android:backgroundTint="#3498DB"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <!-- Add More Assignments Here -->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

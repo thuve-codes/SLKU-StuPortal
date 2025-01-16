@@ -11,6 +11,18 @@
         android:theme="@style/Theme.SLKUStuPortal"
         tools:targetApi="31">
         <activity
+            android:name=".CourseMaterials"
+            android:exported="false" />
+        <activity
+            android:name=".Assignments"
+            android:exported="false" />
+        <activity
+            android:name=".Grades"
+            android:exported="false" />
+        <activity
+            android:name=".Exams"
+            android:exported="false" />
+        <activity
             android:name=".ForgotpwdActivity"
             android:exported="false" />
         <activity

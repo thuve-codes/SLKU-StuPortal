@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CourseMaterials">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="32dp">
+
+            <!-- Header Section -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <!-- Back Button -->
+                <ImageView
+                    android:id="@+id/backButton"
+                    android:layout_width="20dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/backbutton"
+                    android:contentDescription="Back Button"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true" />
+
+                <!-- Page Title -->
+                <TextView
+                    android:id="@+id/materialsPageTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/backButton"
+                    android:layout_marginStart="10dp"
+                    android:shadowColor="#000000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="4"
+                    android:text="Course Materials"
+                    android:textColor="#2C3E50"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+            <!-- Description Section -->
+            <TextView
+                android:id="@+id/materialsDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Access lecture notes, assignments, and other resources for your courses."
+                android:textSize="18sp"
+                android:textColor="#34495E"
+                android:layout_marginBottom="20dp"
+                android:lineSpacingExtra="8dp" />
+
+            <!-- List of Course Materials -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/materialsCourse1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Course: Mathematics"
+                    android:textSize="20sp"
+                    android:textColor="#34495E"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/materialType1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Material: Lecture Notes"
+                    android:textSize="18sp"
+                    android:textColor="#7F8C8D" />
+
+                <Button
+                    android:id="@+id/btnDownload1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Download"
+                    android:textSize="18sp"
+                    android:backgroundTint="#2ECC71"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/materialsCourse2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Course: Physics"
+                    android:textSize="20sp"
+                    android:textColor="#34495E"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/materialType2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Material: Assignment"
+                    android:textSize="18sp"
+                    android:textColor="#7F8C8D" />
+
+                <Button
+                    android:id="@+id/btnDownload2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Download"
+                    android:textSize="18sp"
+                    android:backgroundTint="#2ECC71"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <!-- Add more material entries as needed -->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

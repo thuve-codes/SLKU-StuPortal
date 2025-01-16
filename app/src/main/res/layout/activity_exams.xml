@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Exams">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="32dp">
+
+            <!-- Header Section -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <!-- Back Button -->
+                <ImageView
+                    android:id="@+id/backButton"
+                    android:layout_width="20dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/backbutton"
+                    android:contentDescription="Back Button"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true" />
+
+                <!-- Page Title -->
+                <TextView
+                    android:id="@+id/examPageTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="79dp"
+                    android:layout_toEndOf="@id/backButton"
+                    android:shadowColor="#000000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="4"
+                    android:text="Exams"
+                    android:textColor="#2C3E50"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+
+            <!-- Description Section -->
+            <TextView
+                android:id="@+id/examDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Keep track of your upcoming exams, dates, and locations. View details for exam-related guidelines and preparation materials."
+                android:textSize="18sp"
+                android:textColor="#34495E"
+                android:layout_marginBottom="20dp"
+                android:lineSpacingExtra="8dp" />
+
+            <!-- Exam List Header -->
+            <TextView
+                android:id="@+id/examListHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upcoming Exams"
+                android:textSize="22sp"
+                android:textColor="#2C3E50"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp" />
+
+            <!-- List of Exams (Example Items) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/examSubject1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Subject: Mathematics"
+                    android:textSize="20sp"
+                    android:textColor="#34495E"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/examDate1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date: Jan 20, 2025"
+                    android:textSize="16sp"
+                    android:textColor="#7F8C8D"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/examLocation1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Location: Room 101, Block A"
+                    android:textSize="16sp"
+                    android:textColor="#7F8C8D"
+                    android:layout_marginBottom="8dp" />
+
+                <Button
+                    android:id="@+id/btnExamDetails1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="View Details"
+                    android:textSize="18sp"
+                    android:backgroundTint="#3498DB"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <!-- Example for Another Exam -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/examSubject2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Subject: Physics"
+                    android:textSize="20sp"
+                    android:textColor="#34495E"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/examDate2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date: Jan 25, 2025"
+                    android:textSize="16sp"
+                    android:textColor="#7F8C8D"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/examLocation2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Location: Room 204, Block B"
+                    android:textSize="16sp"
+                    android:textColor="#7F8C8D"
+                    android:layout_marginBottom="8dp" />
+
+                <Button
+                    android:id="@+id/btnExamDetails2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="View Details"
+                    android:textSize="18sp"
+                    android:backgroundTint="#3498DB"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <!-- Add More Exams Here -->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
